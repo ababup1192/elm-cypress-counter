@@ -6,6 +6,7 @@ jobs:
         environment:
           ## this enables colors in the output
           TERM: xterm
+    working_directory: ~/project
     steps:
       - checkout
       - run:
