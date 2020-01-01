@@ -13,5 +13,7 @@ jobs:
           name: Install Dependencies
           command: npm install
       - run:
-          command: npm test
+          command: npm run cy:ci
           background: true
+      - run:
+          command: npm run cy:run

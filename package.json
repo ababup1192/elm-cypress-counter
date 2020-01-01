@@ -7,6 +7,7 @@
     "start": "parcel ./src/index.html --out-dir dist",
     "build": "parcel build ./src/index.html --out-dir dist",
     "cy:run": "cypress run",
+    "cy:ci": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test start https-get://localhost:1234 cy:run",
     "test": "start-server-and-test start http://localhost:1234 cy:run"
   },
   "author": "",
