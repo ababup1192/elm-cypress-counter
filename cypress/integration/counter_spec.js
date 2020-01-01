@@ -1,6 +1,6 @@
 describe("Elm Counter Test", function() {
   beforeEach(function() {
-    cy.visit("http://localhost:8000/");
+    cy.visit("http://localhost:1234/");
   });
 
   const counterButtonElementId = '[data-cypress-id="counter-num"]';
