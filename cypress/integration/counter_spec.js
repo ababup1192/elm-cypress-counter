@@ -1,20 +1,20 @@
-describe("Elm Counter Test", () => {
-  beforeEach(() => {
+describe("Elm Counter Test", function() {
+  beforeEach(function() {
     cy.visit("http://localhost:1234/");
   });
 
   const counterButtonElementId = '[data-cypress-id="counter-num"]';
 
-  describe("+ button", () => {
-    it("Increment number", () => {
+  describe("+ button", function() {
+    it("Increment number", function() {
       cy.contains("+").click();
 
       cy.get(counterButtonElementId).should("have.text", "1");
     });
   });
 
-  describe("- button", () => {
-    it("Decrement number", () => {
+  describe("- button", function() {
+    it("Decrement number", function() {
       cy.contains("-").click();
 
       cy.get(counterButtonElementId).should("have.text", "-1");
